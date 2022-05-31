@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    padding: 0;
+    border:0
+}
+@font-face {
+    font-family: "Nobile";
+    src: url(../fonts/Nobile-Regular.ttf);
+}
+@font-face{
+    font-family: "NobileBold";
+    src: url(../fonts/Nobile-Bold.ttf);
+}
+@font-face{
+    font-family: "NobileItalic";
+    src: url(../fonts/Nobile-Italic.ttf);
+}
+@font-face{
+    font-family: "NobileMedium";
+    src: url(../fonts/Nobile-Medium.ttf);
+}
+.containter{
+    display: grid;
+    grid-template-columns: 50fr auto;
+    grid-template-rows: 20fr 50fr 25fr auto;
+    grid-area: "header header"
+    "principal principal"
+    "social social"
+    "footer footer";
+}
+.header{
+    grid-area:header;
+    font-family: NobileBold;
+    display:flexbox;
+}
+.nav{
+    text-align: left;
+    direction: flexbox;
+    justify-items: auto;
+}
+.principal{
+    grid-area:principal;
+}
+.social{
+    grid-area:social;
+}
+footer{
+    grid-area:footer;
+}
+header{
+    font-family: NobileBold;
+    font-size: larger;
+    background-color: black;
+    color: aliceblue;
+    display:flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+.navegacion li{
+    list-style-type: none;
+    display: inline;
+    text-decoration-line: none;
+}

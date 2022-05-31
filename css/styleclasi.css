@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding: 0;
+    border:0
+}
+@font-face {
+    font-family: "Nobile";
+    src: url(../fonts/Nobile-Regular.ttf);
+}
+@font-face{
+    font-family: "NobileBold";
+    src: url(../fonts/Nobile-Bold.ttf);
+}
+@font-face{
+    font-family: "NobileItalic";
+    src: url(../fonts/Nobile-Italic.ttf);
+}
+@font-face{
+    font-family: "NobileMedium";
+    src: url(../fonts/Nobile-Medium.ttf);
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header header header"
+    "diauno diauno diauno"
+    "diados diados diados"
+    "footer footer footer";
+}
+.encabezado{
+    grid-area: header;
+    background-color: black;
+    color: floralwhite;
+    padding: 10px;
+    border-bottom: solid 5px green;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.uno{
+    grid-area: diauno;
+    background-color: honeydew;
+}
+.dos{
+    grid-area: diados;
+}
+.dia{
+    background-color: honeydew;
+    color: darkgreen;
+    font-family: Nobile;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.titulo{
+    font-family: NobileItalic;
+    color: black;
+    align-self: flex-start;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-bottom: solid darkgreen 5px;
+    margin-bottom: 10px;
+}
+.fecha{
+    transform: translate(120px, -35px);
+    color: darkgreen;
+    font-family: NobileBold;
+}
+
+footer{
+    grid-area: footer;
+    font-family: Nobile;
+    color: floralwhite;
+    font-size: medium;
+    background: linear-gradient(-45deg,lightgreen, darkgreen);
+    border-top: 5px solid green;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.enlaces{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    outline: none;
+}
