@@ -101,7 +101,7 @@ footer{
     font-family: Nobile;
     color: floralwhite;
     font-size: medium;
-    background-color: darkgreen;
+    background: linear-gradient(-45deg, lightgreen, darkgreen, lightgreen);
     border-top: 3px solid black;
     border-bottom: 3px solid black;
     display: flex;
