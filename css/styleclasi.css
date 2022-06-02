@@ -68,6 +68,19 @@
     color: darkgreen;
     font-family: NobileBold;
 }
+/*agregando animacion*/
+.fecha{
+    animation-name: colores;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes colores{
+    from{
+        color: darkgreen;
+    }
+    to{ color: lightgreen;}
+}
 .wods{
     display: flex;
     flex-flow: row wrap;
