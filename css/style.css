@@ -21,43 +21,124 @@
 }
 .containter{
     display: grid;
-    grid-template-columns: 50fr auto;
-    grid-template-rows: 20fr 50fr 25fr auto;
-    grid-area: "header header"
-    "principal principal"
-    "social social"
-    "footer footer";
+    grid-template-columns: 100fr;
+    grid-template-rows: 20fr 75fr 40fr 15fr;
+    grid-area: "header"
+    "principal"
+    "social"
+    "footer";}
+
+header{
+    grid-area: header;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:flex-start;
+    align-items: center;
+    border-bottom: solid darkgreen 5px;
 }
-.header{
-    grid-area:header;
-    font-family: NobileBold;
-    display:flexbox;
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: green;
 }
-.nav{
-    text-align: left;
-    direction: flexbox;
-    justify-items: auto;
+
+li {
+    float: left;
 }
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 6px;
+    text-decoration: none;
+    border: solid white 1px;
+}
+
 .principal{
-    grid-area:principal;
+    grid-area: principal;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Nobile;
+    border-bottom: solid darkgreen 5px;
+}
+h1{
+    font-family: NobileBold;
+    text-align: center;
+    font-size: x-large;
+    padding: 20px;
+}
+.texto_principal{
+    font-family: NobileMedium;
+    padding: 15px;
+    font-size: large;
+    text-align: center;
+}
+.contenedor {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+}
+.contenedor > .crop {
+    position:absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.registration{
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: green;
+    color: white;
+    padding: 10px;
 }
 .social{
-    grid-area:social;
+    grid-area: social;
+    background-color: lightgray;
+    text-align: left;
 }
-footer{
-    grid-area:footer;
-}
-header{
+h2{
     font-family: NobileBold;
-    font-size: larger;
-    background-color: black;
-    color: aliceblue;
-    display:flex;
-    justify-content: space-between;
-    padding: 25px;
+    text-align: left;
+    font-size: x-large;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 5px;
 }
-.navegacion li{
-    list-style-type: none;
-    display: inline;
-    text-decoration-line: none;
+.texto_social{
+    font-family: NobileItalic;
+    font-size: medium;
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.video{
+    padding:20px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-top: solid darkgreen 5px;
+    text-align: center;
+}
+@media screen and (min-width:768px) {
+    
 }

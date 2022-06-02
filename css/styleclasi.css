@@ -35,9 +35,10 @@
     padding: 10px;
     border-bottom: solid 5px green;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     align-items: center;
     justify-content: space-evenly;
+    text-align: center;
 }
 .uno{
     grid-area: diauno;
@@ -52,7 +53,6 @@
     font-family: Nobile;
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
 }
 .titulo{
     font-family: NobileItalic;
@@ -64,9 +64,36 @@
     margin-bottom: 10px;
 }
 .fecha{
-    transform: translate(120px, -35px);
+    transform: translate(200px, -35px);
     color: darkgreen;
     font-family: NobileBold;
+}
+.wods{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding: 5px;
+    list-style-type: none;
+}
+.wods li{
+    font-family: NobileMedium;
+    padding: 5px;
+}
+
+.ejercicios{
+    font-family: Nobile;
+    font-size: small;
+    list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 5px;
+}
+.ejercicios li{
+    font-family: NobileItalic;
+    font-size: medium;
+    text-align: justify;
+
 }
 
 footer{
@@ -74,15 +101,42 @@ footer{
     font-family: Nobile;
     color: floralwhite;
     font-size: medium;
-    background: linear-gradient(-45deg,lightgreen, darkgreen);
-    border-top: 5px solid green;
+    background-color: darkgreen;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    padding: 5px;
+    padding-bottom: 20px;
 }
-.enlaces{
-    display: flex;
-    flex-direction: column;
+
+footer p{
+    text-align: center;
+    padding: 10px;
+}
+
+.enlaces {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: green;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 6px;
     text-decoration: none;
-    outline: none;
+    border: solid black 1px;
+}
+}
+@media  screen and (min-width:768px) {
+
 }
