@@ -1,0 +1,25 @@
+header{
+    background-color: black;
+    border-bottom: solid darkgreen 5px;
+    margin: 10px;
+}
+h1{
+    color: antiquewhite;
+}
+footer{
+    font-family: Nobile;
+    color: floralwhite;
+    font-size: medium;
+    background: linear-gradient(-45deg, lightgreen, darkgreen, lightgreen);
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 5px;
+    padding-bottom: 20px;
+}
+footer p{
+    text-align: center;
+    padding: 10px;
+}
