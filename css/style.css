@@ -37,7 +37,7 @@ header{
     align-items: center;
     border-bottom: solid darkgreen 5px;
 }
-
+/* USANDO BOOTSTRAP ESTO LO COMENTO QUE ERA EL TRABAJO DE ANTES
 ul {
     list-style-type: none;
     margin: 0;
@@ -58,7 +58,7 @@ li a {
     text-decoration: none;
     border: solid white 1px;
 }
-
+*/
 .principal{
     grid-area: principal;
     background-color: azure;
@@ -121,8 +121,8 @@ h1{
     margin: 0;
     padding: 0;
     display: block;
-    background-color: green;
-    color: white;
+   /* background-color: green; probando boton con bootstrap*/
+    color: green;
     padding: 10px;
 }
 .registration:hover{
