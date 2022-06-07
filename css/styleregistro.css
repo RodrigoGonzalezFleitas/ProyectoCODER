@@ -1,0 +1,29 @@
+header{
+    border-bottom: solid darkgreen 2px;
+    border-top: solid black 2px;
+}
+footer{
+    border-top: solid 2px darkgreen;
+}
+/*Trabajo de animacion para el titulo*/
+h1{}
+
+
+
+/*Agregando pseudoclases */
+.boton:hover{
+    background-color: green;
+    font-size: large;
+}
+
+.animacion{
+    animation-name: animacion;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation animation-duration: 3s;
+}
+@keyframes .animacion{
+    from 
+}
+}
