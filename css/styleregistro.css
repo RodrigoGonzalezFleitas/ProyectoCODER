@@ -6,7 +6,6 @@ footer{
     border-top: solid 2px darkgreen;
 }
 /*Trabajo de animacion para el titulo*/
-h1{}
 
 
 
@@ -15,15 +14,13 @@ h1{}
     background-color: green;
     font-size: large;
 }
-
+/*Me gustaria agregar una animacion a esta pages pero la verdad no se me ocurre algo que quede bien con el diseño*/
 .animacion{
     animation-name: animacion;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
     animation-delay: 2s;
-    animation animation-duration: 3s;
+    animation-duration: 3s;
 }
-@keyframes .animacion{
-    from 
-}
-}
+/*Podria usar el keyframe para tener un slide in en el titulo pero quedaba feo y lo borre*/
+/* era un from width 100% y margin left 100 a un width 300 y margin left 300*/
