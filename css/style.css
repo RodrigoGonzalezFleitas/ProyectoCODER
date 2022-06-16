@@ -28,7 +28,7 @@ header {
   align-items: center;
   padding: 20px;
   font-family: Nobile;
-  border-bottom: solid darkgreen 5px; }
+  border-bottom: darkgreen solid 5px; }
 
 h1 {
   font-family: NobileBold;
@@ -37,7 +37,7 @@ h1 {
   padding: 20px;
   animation-name: entrada;
   animation-duration: 3s;
-  animation-delay: 1s; }
+  animation-delay: 0.5s; }
 
 @keyframes entrada {
   from {
@@ -48,10 +48,10 @@ h1 {
     width: 100%; } }
 
 .texto_principal {
-  font-family: NobileMedium;
   padding: 15px;
-  font-size: large;
-  text-align: center; }
+  font-family: NobileMedium;
+  text-align: center;
+  font-size: large; }
 
 .contenedor {
   width: 200px;
@@ -72,7 +72,6 @@ h1 {
 
 .registration {
   margin: 0;
-  padding: 0;
   display: block;
   color: green;
   padding: 10px; }
@@ -103,8 +102,10 @@ h2 {
   padding: 20px; }
 
 footer {
+  font-family: Nobile;
+  text-align: center;
+  font-size: medium;
   background: linear-gradient(-45deg, lightgreen, darkgreen, lightgreen);
   color: white;
   padding: 20px;
-  border-top: darkgreen solid 5px;
-  text-align: center; }
+  border-top: darkgreen solid 5px; }
