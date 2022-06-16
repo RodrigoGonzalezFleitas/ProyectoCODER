@@ -1,0 +1,100 @@
+@import "_colors";
+@import "_font";
+
+header{
+            background-color: $bg-secundario;
+            border-bottom: $border;
+        }
+.principal{
+            background-color: azure;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            font-family: $font-ppal;
+            border-bottom: solid darkgreen 5px;
+            }
+            h1{
+                font-family: $font-h;
+                text-align: center;
+                font-size: x-large;
+                padding: 20px;
+                animation-name: entrada;
+                animation-duration: 3s;
+                animation-delay: 1s;
+                @keyframes entrada{
+                    from{
+                        margin-left: 100%;
+                        width:300%;
+                    }
+                    to{
+                        margin-right: 0%;
+                        width: 100%;
+                    }
+                    }
+            }
+            .texto_principal{
+                font-family: $texto-principal;
+                padding: 15px;
+                font-size: large;
+                text-align: center;
+            }
+            .contenedor {
+                width: 200px;
+                height: 200px;
+                overflow: hidden;
+                margin: 10px;
+                position: relative;
+            }
+            .contenedor > .crop {
+                position:absolute;
+                left: -100%;
+                right: -100%;
+                top: -100%;
+                bottom: -100%;
+                margin: auto;
+                min-height: 100%;
+                min-width: 100%;
+            }
+
+
+            .registration{
+                margin: 0;
+                padding: 0;
+                display: block;
+                color: $color-registration;
+                padding: 10px;
+                    :hover{
+                        background-color: $bg-registration;
+                        }
+                    }
+.social{
+                grid-area: social;
+                background-color: $bg-social;
+                text-align: left;
+}
+                h2{
+                    font-family: $font-h;
+                    text-align: left;
+                    font-size: x-large;
+                    padding-top: 20px;
+                    padding-bottom: 10px;
+                    padding-left: 5px;
+                }
+                .texto_social{
+                    font-family: $font-social;
+                    font-size: medium;
+                    text-align: justify;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+                .video{
+                    padding:20px;
+                }
+footer{
+           background: $bg-gradient;
+            color: $color-footer;
+            padding: 20px;
+            border-top: $border;
+            text-align: center;
+        }

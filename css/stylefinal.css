@@ -8,11 +8,12 @@ h1{
 }
 footer{
     font-family: Nobile;
-    color: floralwhite;
+    color: black;
     font-size: medium;
-    background: linear-gradient(-45deg, lightgreen, darkgreen, lightgreen);
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
+    /*background: linear-gradient(-45deg, lightgreen, darkgreen, lightgreen);*/
+    background-color: white;
+    border-top: 3px solid darkgreen;
+    border-bottom: 3px solid darkgreen;
     display: flex;
     flex-flow: column wrap;
     align-items: center;

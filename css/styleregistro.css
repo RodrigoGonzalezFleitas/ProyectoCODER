@@ -5,6 +5,9 @@ header{
 footer{
     border-top: solid 2px darkgreen;
 }
+footer p{
+    text-align: center;
+}
 /*Trabajo de animacion para el titulo*/
 
 

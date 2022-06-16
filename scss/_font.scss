@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "Nobile";
+    src: url(../fonts/Nobile-Regular.ttf);
+}
+@font-face{
+    font-family: "NobileBold";
+    src: url(../fonts/Nobile-Bold.ttf);
+}
+@font-face{
+    font-family: "NobileItalic";
+    src: url(../fonts/Nobile-Italic.ttf);
+}
+@font-face{
+    font-family: "NobileMedium";
+    src: url(../fonts/Nobile-Medium.ttf);
+}
+/*Creado ppalmente para el index pero se usaran en otros pages, no son los mejores nombres para otras pages*/
+$font-ppal: Nobile;
+$font-h: NobileBold;
+$font-social: NobileItalic;
+$texto-principal: NobileMedium;
+

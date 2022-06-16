@@ -129,14 +129,6 @@ footer p{
     padding: 10px;
 }
 
-.enlaces {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: green;
-}
-
 li {
     float: left;
 }
@@ -147,8 +139,4 @@ li a {
     text-align: center;
     padding: 10px 6px;
     text-decoration: none;
-    border: solid black 1px;
-}
-@media  screen and (min-width:768px) {
-
 }

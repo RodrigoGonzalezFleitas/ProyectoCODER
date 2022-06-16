@@ -1,0 +1,424 @@
+/*INDEX backup*/
+*{
+    margin:0;
+    padding: 0;
+    border:0
+}
+@font-face {
+    font-family: "Nobile";
+    src: url(../fonts/Nobile-Regular.ttf);
+}
+@font-face{
+    font-family: "NobileBold";
+    src: url(../fonts/Nobile-Bold.ttf);
+}
+@font-face{
+    font-family: "NobileItalic";
+    src: url(../fonts/Nobile-Italic.ttf);
+}
+@font-face{
+    font-family: "NobileMedium";
+    src: url(../fonts/Nobile-Medium.ttf);
+}
+.containter{
+    display: grid;
+    grid-template-columns: 100fr;
+    grid-template-rows: 20fr 75fr 40fr 15fr;
+    grid-area: "header"
+    "principal"
+    "social"
+    "footer";}
+
+header{
+    grid-area: header;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:flex-start;
+    align-items: center;
+    border-bottom: solid darkgreen 5px;
+}
+/* USANDO BOOTSTRAP ESTO LO COMENTO QUE ERA EL TRABAJO DE ANTES
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: green;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 6px;
+    text-decoration: none;
+    border: solid white 1px;
+}
+*/
+.principal{
+    grid-area: principal;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Nobile;
+    border-bottom: solid darkgreen 5px;
+}
+h1{
+    font-family: NobileBold;
+    text-align: center;
+    font-size: x-large;
+    padding: 20px;
+}
+/*agregando animaciones*/
+
+h1{
+    animation-name: entrada;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+@keyframes entrada{
+    from{
+        margin-left: 100%;
+        width:300%;
+    }
+    to{
+        margin-right: 0%;
+        width: 100%;
+    }
+    }
+
+.texto_principal{
+    font-family: NobileMedium;
+    padding: 15px;
+    font-size: large;
+    text-align: center;
+}
+.contenedor {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+}
+.contenedor > .crop {
+    position:absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.registration{
+    margin: 0;
+    padding: 0;
+    display: block;
+   /* background-color: green; probando boton con bootstrap*/
+    color: green;
+    padding: 10px;
+}
+.registration:hover{
+    background-color: lightgreen;
+}
+.social{
+    grid-area: social;
+    background-color: lightgray;
+    text-align: left;
+}
+h2{
+    font-family: NobileBold;
+    text-align: left;
+    font-size: x-large;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.texto_social{
+    font-family: NobileItalic;
+    font-size: medium;
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.video{
+    padding:20px;
+}
+
+footer{
+    grid-area: footer;
+    background: linear-gradient(-45deg, lightgreen, darkgreen, lightgreen);
+    color: white;
+    padding: 20px;
+    border-top: solid darkgreen 5px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Clasificacion backup*/
+*{
+    margin:0;
+    padding: 0;
+    border:0
+}
+@font-face {
+    font-family: "Nobile";
+    src: url(../fonts/Nobile-Regular.ttf);
+}
+@font-face{
+    font-family: "NobileBold";
+    src: url(../fonts/Nobile-Bold.ttf);
+}
+@font-face{
+    font-family: "NobileItalic";
+    src: url(../fonts/Nobile-Italic.ttf);
+}
+@font-face{
+    font-family: "NobileMedium";
+    src: url(../fonts/Nobile-Medium.ttf);
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header header header"
+    "diauno diauno diauno"
+    "diados diados diados"
+    "footer footer footer";
+}
+.encabezado{
+    grid-area: header;
+    background-color: black;
+    color: floralwhite;
+    padding: 10px;
+    border-bottom: solid 5px green;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.uno{
+    grid-area: diauno;
+    background-color: honeydew;
+}
+.dos{
+    grid-area: diados;
+}
+.dia{
+    background-color: honeydew;
+    color: darkgreen;
+    font-family: Nobile;
+    display: flex;
+    flex-flow: column wrap;
+}
+.titulo{
+    font-family: NobileItalic;
+    color: black;
+    align-self: flex-start;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-bottom: solid darkgreen 5px;
+    margin-bottom: 10px;
+}
+.fecha{
+    transform: translate(200px, -35px);
+    color: darkgreen;
+    font-family: NobileBold;
+}
+/*agregando animacion*/
+.fecha{
+    animation-name: colores;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes colores{
+    from{
+        color: darkgreen;
+    }
+    to{ color: lightgreen;}
+}
+.wods{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding: 5px;
+    list-style-type: none;
+}
+.wods li{
+    font-family: NobileMedium;
+    padding: 5px;
+}
+
+.ejercicios{
+    font-family: Nobile;
+    font-size: small;
+    list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 5px;
+}
+.ejercicios li{
+    font-family: NobileItalic;
+    font-size: medium;
+    text-align: justify;
+
+}
+
+footer{
+    grid-area: footer;
+    font-family: Nobile;
+    color: floralwhite;
+    font-size: medium;
+    background: linear-gradient(-45deg, lightgreen, darkgreen, lightgreen);
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 5px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    text-align: center;
+    padding: 10px;
+}
+
+.enlaces {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: green;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 6px;
+    text-decoration: none;
+    border: solid black 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*La final backup*/
+
+header{
+    background-color: black;
+    border-bottom: solid darkgreen 5px;
+    margin: 10px;
+}
+h1{
+    color: antiquewhite;
+}
+footer{
+    font-family: Nobile;
+    color: black;
+    font-size: medium;
+    /*background: linear-gradient(-45deg, lightgreen, darkgreen, lightgreen);*/
+    background-color: white;
+    border-top: 3px solid darkgreen;
+    border-bottom: 3px solid darkgreen;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 5px;
+    padding-bottom: 20px;
+}
+footer p{
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Registro backup*/
+
+header{
+    border-bottom: solid darkgreen 2px;
+    border-top: solid black 2px;
+}
+footer{
+    border-top: solid 2px darkgreen;
+}
+footer p{
+    text-align: center;
+}
+/*Trabajo de animacion para el titulo*/
+
+
+
+/*Agregando pseudoclases */
+.boton:hover{
+    background-color: green;
+    font-size: large;
+}
+/*Me gustaria agregar una animacion a esta pages pero la verdad no se me ocurre algo que quede bien con el diseño*/
+.animacion{
+    animation-name: animacion;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-duration: 3s;
+}
+/*Podria usar el keyframe para tener un slide in en el titulo pero quedaba feo y lo borre*/
+/* era un from width 100% y margin left 100 a un width 300 y margin left 300*/

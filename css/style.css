@@ -1,163 +1,110 @@
-*{
-    margin:0;
-    padding: 0;
-    border:0
-}
+/*Colores para el index*/
+/*Colores para la clasificacion*/
 @font-face {
-    font-family: "Nobile";
-    src: url(../fonts/Nobile-Regular.ttf);
-}
-@font-face{
-    font-family: "NobileBold";
-    src: url(../fonts/Nobile-Bold.ttf);
-}
-@font-face{
-    font-family: "NobileItalic";
-    src: url(../fonts/Nobile-Italic.ttf);
-}
-@font-face{
-    font-family: "NobileMedium";
-    src: url(../fonts/Nobile-Medium.ttf);
-}
-.containter{
-    display: grid;
-    grid-template-columns: 100fr;
-    grid-template-rows: 20fr 75fr 40fr 15fr;
-    grid-area: "header"
-    "principal"
-    "social"
-    "footer";}
+  font-family: "Nobile";
+  src: url(../fonts/Nobile-Regular.ttf); }
 
-header{
-    grid-area: header;
-    background-color: black;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content:flex-start;
-    align-items: center;
-    border-bottom: solid darkgreen 5px;
-}
-/* USANDO BOOTSTRAP ESTO LO COMENTO QUE ERA EL TRABAJO DE ANTES
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: green;
-}
+@font-face {
+  font-family: "NobileBold";
+  src: url(../fonts/Nobile-Bold.ttf); }
 
-li {
-    float: left;
-}
+@font-face {
+  font-family: "NobileItalic";
+  src: url(../fonts/Nobile-Italic.ttf); }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 10px 6px;
-    text-decoration: none;
-    border: solid white 1px;
-}
-*/
-.principal{
-    grid-area: principal;
-    background-color: azure;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    font-family: Nobile;
-    border-bottom: solid darkgreen 5px;
-}
-h1{
-    font-family: NobileBold;
-    text-align: center;
-    font-size: x-large;
-    padding: 20px;
-}
-/*agregando animaciones*/
+@font-face {
+  font-family: "NobileMedium";
+  src: url(../fonts/Nobile-Medium.ttf); }
 
-h1{
-    animation-name: entrada;
-    animation-duration: 3s;
-    animation-delay: 1s;
-}
-@keyframes entrada{
-    from{
-        margin-left: 100%;
-        width:300%;
-    }
-    to{
-        margin-right: 0%;
-        width: 100%;
-    }
-    }
+/*Creado ppalmente para el index pero se usaran en otros pages, no son los mejores nombres para otras pages*/
+header {
+  background-color: black;
+  border-bottom: darkgreen solid 5px; }
 
-.texto_principal{
-    font-family: NobileMedium;
-    padding: 15px;
-    font-size: large;
-    text-align: center;
-}
+.principal {
+  background-color: azure;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Nobile;
+  border-bottom: solid darkgreen 5px; }
+
+h1 {
+  font-family: NobileBold;
+  text-align: center;
+  font-size: x-large;
+  padding: 20px;
+  animation-name: entrada;
+  animation-duration: 3s;
+  animation-delay: 1s; }
+
+@keyframes entrada {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-right: 0%;
+    width: 100%; } }
+
+.texto_principal {
+  font-family: NobileMedium;
+  padding: 15px;
+  font-size: large;
+  text-align: center; }
+
 .contenedor {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    margin: 10px;
-    position: relative;
-}
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin: 10px;
+  position: relative; }
+
 .contenedor > .crop {
-    position:absolute;
-    left: -100%;
-    right: -100%;
-    top: -100%;
-    bottom: -100%;
-    margin: auto;
-    min-height: 100%;
-    min-width: 100%;
-}
+  position: absolute;
+  left: -100%;
+  right: -100%;
+  top: -100%;
+  bottom: -100%;
+  margin: auto;
+  min-height: 100%;
+  min-width: 100%; }
 
-.registration{
-    margin: 0;
-    padding: 0;
-    display: block;
-   /* background-color: green; probando boton con bootstrap*/
-    color: green;
-    padding: 10px;
-}
-.registration:hover{
-    background-color: lightgreen;
-}
-.social{
-    grid-area: social;
-    background-color: lightgray;
-    text-align: left;
-}
-h2{
-    font-family: NobileBold;
-    text-align: left;
-    font-size: x-large;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-}
+.registration {
+  margin: 0;
+  padding: 0;
+  display: block;
+  color: green;
+  padding: 10px; }
+  .registration :hover {
+    background-color: lightgreen; }
 
-.texto_social{
-    font-family: NobileItalic;
-    font-size: medium;
-    text-align: justify;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-.video{
-    padding:20px;
-}
+.social {
+  grid-area: social;
+  background-color: lightgray;
+  text-align: left; }
 
-footer{
-    grid-area: footer;
-    background: linear-gradient(-45deg, lightgreen, darkgreen, lightgreen);
-    color: white;
-    padding: 20px;
-    border-top: solid darkgreen 5px;
-    text-align: center;
-}
+h2 {
+  font-family: NobileBold;
+  text-align: left;
+  font-size: x-large;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 5px; }
+
+.texto_social {
+  font-family: NobileItalic;
+  font-size: medium;
+  text-align: justify;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.video {
+  padding: 20px; }
+
+footer {
+  background: linear-gradient(-45deg, lightgreen, darkgreen, lightgreen);
+  color: white;
+  padding: 20px;
+  border-top: darkgreen solid 5px;
+  text-align: center; }
